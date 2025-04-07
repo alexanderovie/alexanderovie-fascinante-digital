@@ -62,9 +62,9 @@ const FeaturesListicle = () => {
   return (
     <section className="py-24" id="features">
       <div className="max-w-3xl mx-auto px-4">
-        <p className="text-sm font-mono text-blue-600 mb-3">
-          const launch_time = "Today";
-        </p>
+      <p className="text-sm font-mono text-blue-600 mb-3">
+  const launch_time = &quot;Today&quot;;
+</p>
         <h2 className="text-4xl font-extrabold mb-6">Supercharge your app instantly</h2>
         <p className="text-gray-600 text-lg mb-10">
           Login users, process payments and send emails at lightspeed.
