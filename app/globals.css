@@ -7,23 +7,15 @@ body {
   scroll-behavior: smooth !important;
 }
 
-/* Hace que la barra de progreso HTML tenga animaciÃ³n al llenarse */
+/* It makes the HTML progress bar filling smooth when value change. */
 progress::-webkit-progress-value {
   transition: 0.6s width ease-out;
 }
 
 @layer base {
-  /* âŒ Estilos por defecto eliminados para los botones sin clase */
-  /*
-  button {
-    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-300 rounded-lg px-4 py-2 transition-all;
-  }
-  */
-
   .btn-gradient {
     @apply !bg-gradient !bg-[length:300%_300%] hover:saturate-[1.2] shadow duration-100 !border-0 !border-transparent !bg-transparent animate-shimmer disabled:!bg-none disabled:!bg-gray-500/30  !text-white;
   }
-
   .btn {
     @apply !capitalize;
   }
