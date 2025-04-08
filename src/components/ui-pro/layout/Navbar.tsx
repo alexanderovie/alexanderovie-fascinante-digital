@@ -11,7 +11,7 @@ import {
 import Image from 'next/image'
 import Link from 'next/link'
 
-const NavbarPro = () => {
+const Navbar= () => {
   return (
     <Navbar
       fluid
@@ -29,24 +29,24 @@ const NavbarPro = () => {
         />
       </NavbarBrand>
 
-      {/* Toggle solo visible en mobile */}
+      {/* Toggle visible solo en mobile */}
       <div className="flex md:hidden items-center">
         <NavbarToggle />
       </div>
 
-      {/* Contenedor central para el menú (centrado en escritorio) */}
+      {/* Menú principal (visible en escritorio) */}
       <div className="hidden md:flex flex-1 justify-center">
         <NavbarCollapse>
-          <NavbarLink href="/" active>
-            Home
-          </NavbarLink>
-          <NavbarLink href="/about">Company</NavbarLink>
-          <NavbarLink href="/features">Features</NavbarLink>
+          <NavbarLink href="/">Home</NavbarLink>
+          <NavbarLink href="/about">About</NavbarLink>
+          <NavbarLink href="/services">Services</NavbarLink>
+          <NavbarLink href="/pricing">Pricing</NavbarLink>
+          <NavbarLink href="/blog">Blog</NavbarLink>
           <NavbarLink href="/contact">Contact</NavbarLink>
         </NavbarCollapse>
       </div>
 
-      {/* Botones CTA a la derecha */}
+      {/* Botones CTA (Login y Dashboard) */}
       <div className="hidden md:flex items-center gap-2">
         <Button as={Link} href="/signin" color="light" size="sm">
           Log in
@@ -59,4 +59,4 @@ const NavbarPro = () => {
   )
 }
 
-export default NavbarPro
+export default Navbar
