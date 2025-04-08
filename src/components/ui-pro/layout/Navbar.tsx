@@ -29,24 +29,25 @@ const NavbarPro = () => {
         />
       </NavbarBrand>
 
-      {/* Toggle solo visible en mobile */}
+      {/* Toggle visible solo en dispositivos móviles */}
       <div className="flex md:hidden items-center">
         <NavbarToggle />
       </div>
 
-      {/* Contenedor central para el menú (centrado en escritorio) */}
+      {/* Menú principal visible en escritorio */}
       <div className="hidden md:flex flex-1 justify-center">
         <NavbarCollapse>
           <NavbarLink href="/" active>
             Home
           </NavbarLink>
-          <NavbarLink href="/about">Company</NavbarLink>
-          <NavbarLink href="/features">Features</NavbarLink>
+          <NavbarLink href="/about">About Us</NavbarLink>
+          <NavbarLink href="/services">Services</NavbarLink>
+          <NavbarLink href="/blog">Blog</NavbarLink>
           <NavbarLink href="/contact">Contact</NavbarLink>
         </NavbarCollapse>
       </div>
 
-      {/* Botones CTA a la derecha */}
+      {/* Botones de acción a la derecha (login y dashboard) */}
       <div className="hidden md:flex items-center gap-2">
         <Button as={Link} href="/signin" color="light" size="sm">
           Log in
